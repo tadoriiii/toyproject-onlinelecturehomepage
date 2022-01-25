@@ -8,7 +8,7 @@ interface TRequest {
   q: string;
   part: string;
   key: string;
-  maxResults: string;
+  maxResults: number;
 }
 
 export const onRequestSearch = async ({
