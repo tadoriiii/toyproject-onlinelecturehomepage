@@ -45,7 +45,7 @@ const resultSlice = createSlice({
     builder.addCase(
       fetchResults.fulfilled,
       (state, action: PayloadAction<SearchState | undefined>) => {
-        state.results = action.payload?.results as TResult[];
+        state = action.payload as SearchState;
         // state.results = action.payload;
       }
     );
