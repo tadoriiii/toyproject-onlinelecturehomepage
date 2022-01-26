@@ -8,5 +8,6 @@ export const store = configureStore({
   },
 });
 
+// TODO: redux library 다운로드를 안받으니까 당연히 store에 getState가 없죠...
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
